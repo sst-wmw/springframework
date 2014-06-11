@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.dependecyInjection;
+package br.com.wmw.sst.spring.dependecyinjection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +14,10 @@ import java.util.List;
  * @author Richard
  */
 public class SertanejoPlayList implements PlayList {
-    
+
     private int graveSertanejo;
     private int medioSertanejo;
-    private int agudoSertanejo;    
+    private int agudoSertanejo;
 
     @Override
     public List<Musica> getMusicas() {
@@ -42,5 +42,5 @@ public class SertanejoPlayList implements PlayList {
         System.out.println(String.format("Médio: %s", medioSertanejo));
         System.out.println(String.format("Agudo: %s", agudoSertanejo));
     }
-    
+
 }

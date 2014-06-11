@@ -4,9 +4,8 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.dependecyInjection;
+package br.com.wmw.sst.spring.dependecyinjection;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
  * @author Richard
  */
 public class RockPlayList implements PlayList {
-    
+
     private int grave;
     private int medio;
     private int agudo;
@@ -43,5 +42,5 @@ public class RockPlayList implements PlayList {
         System.out.println(String.format("Médio: %s", medio));
         System.out.println(String.format("Agudo: %s", agudo));
     }
-    
+
 }

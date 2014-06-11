@@ -4,23 +4,23 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework;
+package br.com.wmw.sst.spring;
 
-import br.com.wmw.sst.springframework.beanFactory.ClienteService;
-import br.com.wmw.sst.springframework.mock.BeanFactory;
+import br.com.wmw.sst.spring.beanfactory.ClienteService;
+import br.com.wmw.sst.spring.mock.BeanFactory;
 
 /**
  *
  * @author Richard
  */
 public class MainBeanFactory {
-    
+
     public static void main(String[] args) throws Exception {
-        
+
         ClienteService clienteService = (ClienteService) BeanFactory.getBean(ClienteService.class);
         clienteService.insert();
-        clienteService.update();        
-        
+        clienteService.update();
+
     }
-    
+
 }

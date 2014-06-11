@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.dependecyInjection;
+package br.com.wmw.sst.spring.dependecyinjection;
 
 import java.util.List;
 
@@ -13,9 +13,9 @@ import java.util.List;
  * @author Richard
  */
 public interface PlayList {
-    
+
     public List<Musica> getMusicas();
     public void defineEqualizador(int grave, int medio, int agudo);
     public void vizualizarEqualizador();
-    
+
 }

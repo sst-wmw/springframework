@@ -4,19 +4,19 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.dependecyInjection;
+package br.com.wmw.sst.spring.dependecyinjection;
 
 /**
  *
  * @author Richard
  */
 public class Player {
-    
+
     private PlayList playList;
 
     public Player() {
     }
-    
+
     // Constructor Injection
     public Player(final PlayList playList) {
         this.playList = playList;
@@ -34,32 +34,32 @@ public class Player {
             System.out.println("PlayList não definida.");
         }
     }
-    
+
     public void showEqualizador() {
         if (this.playList != null) {
-            this.playList.vizualizarEqualizador();    
+            this.playList.vizualizarEqualizador();
         } else {
-            System.out.println("PlayList não definida.");    
+            System.out.println("PlayList não definida.");
         }
-        
+
     }
 
     public void showMusicas() {
         if (this.playList != null) {
             System.out.println("========= MUSICAS =========");
-            playList.getMusicas().stream().forEach((musica) -> {
+            for (Musica musica : playList.getMusicas()) {
                 System.out.println(musica.toString());
-            });
+            }
             System.out.println("===========================");
         } else {
-            System.out.println("PlayList não definida.");    
+            System.out.println("PlayList não definida.");
         }
     }
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 }

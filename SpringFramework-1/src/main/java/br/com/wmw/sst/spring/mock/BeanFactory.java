@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.mock;
+package br.com.wmw.sst.spring.mock;
 
-import br.com.wmw.sst.springframework.mock.annotation.GerenciamentoSpring;
+import br.com.wmw.sst.spring.mock.GerenciamentoSpring;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,9 +15,9 @@ import java.util.Map;
  * @author Richard
  */
 public class BeanFactory {
-    
+
     private static Map<String, Object> cache = new HashMap<>();
-    
+
     public static Object getBean(final Class clazz) throws Exception {
         if (clazz != null) {
             if (clazz.isAnnotationPresent(GerenciamentoSpring.class)) {
@@ -36,5 +36,5 @@ public class BeanFactory {
             throw new Exception("Class enviada por parâmetro não pode ser nula.");
         }
     }
-    
+
 }

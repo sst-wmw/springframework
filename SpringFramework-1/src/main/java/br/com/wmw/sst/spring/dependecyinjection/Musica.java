@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.dependecyInjection;
+package br.com.wmw.sst.spring.dependecyinjection;
 
 /**
  *
@@ -14,22 +14,22 @@ public class Musica {
 
     private String nmMusica;
     private Genero genero;
-    
+
     public enum Genero {
         SERTANEJO,
         POP,
         POPROCK,
         ROCK,
-        MPB        
+        MPB
     }
-    
+
     public Musica(final String nmMusica, final Genero genero) {
         this.nmMusica = nmMusica;
         this.genero = genero;
     }
-    
-    
-    
+
+
+
     public String getNmMusica() {
         return nmMusica;
     }
@@ -50,6 +50,6 @@ public class Musica {
     public String toString() {
         return String.format("- %s / %s", nmMusica, genero.toString());
     }
-    
-    
+
+
 }

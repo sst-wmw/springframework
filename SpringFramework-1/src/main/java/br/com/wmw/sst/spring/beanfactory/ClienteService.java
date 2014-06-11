@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package br.com.wmw.sst.springframework.beanFactory;
+package br.com.wmw.sst.spring.beanfactory;
 
-import br.com.wmw.sst.springframework.mock.annotation.GerenciamentoSpring;
+import br.com.wmw.sst.spring.mock.GerenciamentoSpring;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,15 +16,15 @@ import java.util.List;
  */
 @GerenciamentoSpring
 public class ClienteService {
-    
+
     public void insert() {
         System.out.println("Cliente inserido com sucesso!");
     }
-    
+
     public void update() {
         System.out.println("Cliente atualizado com sucesso!");
     }
-    
+
     public List<String> findAll() {
         List<String> clientes = new ArrayList<>();
         clientes.add("Fulano");
@@ -32,5 +32,5 @@ public class ClienteService {
         clientes.add("Beltrano");
         return clientes;
     }
-    
+
 }
