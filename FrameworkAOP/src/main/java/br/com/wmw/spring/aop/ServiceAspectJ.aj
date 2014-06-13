@@ -42,5 +42,4 @@ public aspect ServiceAspectJ {
 		String log = String.format("[%s] finalizado método... (Impresso: %s)", dateFormat.format(new Date()), domain.getFlImpresso());
 		System.out.println(log);
 	}
-
 }

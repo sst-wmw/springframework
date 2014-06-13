@@ -1,20 +1,24 @@
 package br.com.wmw.sst.spring;
-import br.com.wmw.spring.domain.Cliente;
-import br.com.wmw.spring.domain.Produto;
+
+import br.com.wmw.sst.spring.aop.TestAOP2;
+import br.com.wmw.sst.spring.aop.TestAOP3;
 
 
 public class MainAOP {
 
 	public static void main(String[] args) {
 
-		Cliente cliente = new Cliente(1, "Richard Elias Constantino");
-		System.out.println(cliente.toString());
+		//TestAOP1 test1 = new TestAOP1();
+		//test1.executeTest();
 
-		System.out.println();
+		//TestAOP2 test2 = new TestAOP2();
+		//test2.executeTest();
 
-		Produto produto = new Produto(1, "iPhone 5s", 2800d);
-		System.out.println(produto.toString());
+		//TestAOP3 test3 = new TestAOP3();
+		//test3.executeTest();
+
 
 	}
+
 
 }
