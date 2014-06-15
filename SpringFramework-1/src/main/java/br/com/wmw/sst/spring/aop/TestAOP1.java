@@ -20,11 +20,11 @@ public class TestAOP1 {
 			//não faz nada
 		}
 
-		cliente.setFlImpresso("S");
 		String className = "[" + cliente.getClass().getSimpleName()+"] ";
-
 		System.out.println(className + cliente.toString());
+		cliente.setFlImpresso("S");
 
+		//Log no fim no método
 		String logFim = String.format("[%s] finalizado método... (Impresso: %s)", new Date(), cliente.getFlImpresso());
 		System.out.println(logFim);
 	}

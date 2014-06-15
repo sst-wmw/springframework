@@ -1,5 +1,6 @@
 package br.com.wmw.sst.spring;
 
+import br.com.wmw.sst.spring.aop.TestAOP1;
 import br.com.wmw.sst.spring.aop.TestAOP2;
 import br.com.wmw.sst.spring.aop.TestAOP3;
 
