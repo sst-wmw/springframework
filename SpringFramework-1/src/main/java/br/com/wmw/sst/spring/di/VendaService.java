@@ -7,6 +7,10 @@ public class VendaService {
 
 	private Log log;
 
+	public VendaService() {
+		super();
+	}
+
 	public VendaService(Log logVenda) {
 		this.log = logVenda;
 	}
@@ -21,6 +25,10 @@ public class VendaService {
 		// Gera log após vender o produto
 		String message = String.format("%s vendido com sucesso", produto);
 		log.geraLog(message);
+	}
+
+	public void setLog(final Log log) {
+		this.log = log;
 	}
 
 }
