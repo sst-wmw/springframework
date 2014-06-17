@@ -1,10 +1,13 @@
 package br.com.wmw.sst.spring.aop;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import br.com.wmw.sst.spring.domain.Cliente;
 
 public class TestAOP2 {
+
+	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 	public void executeTest() {
 		Cliente cliente = new Cliente(1, "João da Silva");
@@ -28,12 +31,12 @@ public class TestAOP2 {
 	}
 
 	private void beforePrint(Cliente cliente) {
-		String log = String.format("[%s] iniciando método... (Impresso: %s)", new Date(), cliente.getFlImpresso());
+		String log = String.format("[%s] iniciando método... (Impresso: %s)", dateFormat.format(new Date()), cliente.getFlImpresso());
 		System.out.println(log);
 	}
 
 	private void afterPrint(Cliente cliente) {
-		String log = String.format("[%s] finalizado método... (Impresso: %s)", new Date(), cliente.getFlImpresso());
+		String log = String.format("[%s] finalizado método... (Impresso: %s)", dateFormat.format(new Date()), cliente.getFlImpresso());
 		System.out.println(log);
 	}
 
