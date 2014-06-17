@@ -1,8 +1,5 @@
-package br.com.wmw.sst.spring;
+package br.com.wmw.sst.spring.aop;
 
-import br.com.wmw.sst.spring.aop.TestAOP1;
-import br.com.wmw.sst.spring.aop.TestAOP2;
-import br.com.wmw.sst.spring.aop.TestAOP3;
 
 
 public class MainAOP {
